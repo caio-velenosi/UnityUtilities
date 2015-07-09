@@ -42,4 +42,14 @@ public class ResourcePool
 	{
 		return list[index];
 	}
+	
+	public void Clear()
+	{
+		for (i = 0; i < list.Length; i++)
+		{
+			GameObject.Destroy(list[i]);
+		}
+		
+		list = null;
+	}
 }
